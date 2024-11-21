@@ -1,0 +1,289 @@
+/* General styles */
+body {
+  background: linear-gradient(to right, #1A202C, #2D3748); /* Modern subtle gradient */
+  font-family: 'Roboto', sans-serif;
+  color: #E2E8F0;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* App Container */
+.App {
+  max-width: 900px;
+  padding: 40px;
+  margin: auto;
+  background: #2D3748;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button {
+  background: #4FD1C5;
+  color: #1A202C;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #38B2AC;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(72, 187, 171, 0.3);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* Header Styles */
+h1, h2 {
+  color: #4FD1C5;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Inputs */
+input[type="file"], .login-form input, .transaction-form input {
+  background: #1A202C;
+  color: #E2E8F0;
+  border: 2px solid #4FD1C5;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%; /* Full width for vertical alignment */
+  transition: border-color 0.3s ease;
+}
+
+input[type="file"]:focus, .login-form input:focus, .transaction-form input:focus {
+  border-color: #38B2AC;
+}
+
+/* Login Form */
+.login-form {
+  background: #2D3748;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form input {
+  margin-bottom: 15px; /* Ensure space between inputs */
+}
+
+.login-form button {
+  background: #4FD1C5;
+  color: #1A202C;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #38B2AC;
+  box-shadow: 0 4px 12px rgba(72, 187, 171, 0.3);
+}
+
+/* Transaction Form */
+.transaction-form {
+  background: #2D3748;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.transaction-history {
+  color: #000; /* Change text color to black for better visibility */
+  background: #F7FAFC;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Navigation Links */
+.nav-link button {
+  background: #4FD1C5;
+  color: #1A202C;
+  font-size: 18px;
+}
+
+.nav-link button:hover {
+  background: #38B2AC;
+}
+
+/* Ensure buttons on the homepage are the same size and have spacing */
+.home-options button {
+  width: 45%; /* Adjust width for consistent size */
+  margin: 0 10px; /* Add spacing between buttons */
+}
+/* Home Page Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Description Text */
+.description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #A0AEC0; /* Subtle contrast */
+}
+
+/* Home Options Buttons */
+.home-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Add spacing between buttons */
+}
+
+.home-options button {
+  width: 150px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  background: #4FD1C5;
+  color: #1A202C;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-options button:hover {
+  background: #38B2AC;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(72, 187, 171, 0.3);
+}
+
+.home-options button:active {
+  transform: scale(0.96);
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2.5rem;
+  color: #4FD1C5;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Description Styling */
+.description {
+  font-size: 1.2rem;
+  max-width: 600px;
+  color: #CBD5E0;
+  line-height: 1.6;
+}
+/* Transaction Form Styling */
+.transaction-form {
+  background: #2D3748;  /* Keep the background consistent */
+  padding: 30px 40px;   /* Adjust padding to give it space */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;  /* Increase the width of the transaction form */
+  margin: auto;
+  text-align: left;
+}
+
+/* Status and Buttons */
+.transaction-form p {
+  font-size: 16px;
+  color: #E2E8F0;  /* Light text on dark background */
+  margin-top: 10px;
+}
+
+/* Transaction History Styling */
+.transaction-history {
+  color: #1A202C;  /* Dark text color for better contrast */
+  background: #F7FAFC; /* Light background for transaction box */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-height: 300px; /* Ensure history is scrollable */
+  overflow-y: auto; /* Enable scrolling */
+  text-align: left;
+}
+
+/* Individual Transaction Box */
+.transaction-history div {
+  padding: 10px;
+  background: #EDF2F7;  /* Light background for transaction box */
+  color: #2D3748; /* Dark text for better readability */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.transaction-history div p {
+  margin: 5px 0;
+}
+
+/* Toggle History Button Styling */
+button {
+  background: #4FD1C5;
+  color: #1A202C;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #38B2AC;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(72, 187, 171, 0.3);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* Transaction History Scroll Container */
+.transaction-history-container {
+  max-height: 300px; /* Max height for scrollable area */
+  overflow-y: auto;
+}
+
+/* Toast Container Styling (optional) */
+.Toastify__toast-container {
+  z-index: 9999;  /* Ensure toasts appear on top of other content */
+}
+
+/* Hide Scrollbars (Optional) */
+.transaction-history::-webkit-scrollbar {
+  width: 8px;
+}
+
+.transaction-history::-webkit-scrollbar-thumb {
+  background-color: #4FD1C5;
+  border-radius: 10px;
+}
+
+.transaction-history::-webkit-scrollbar-track {
+  background: #F7FAFC;
+}
